@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300');
+@import url("https://fonts.googleapis.com/css2?family=Bitter");
+
 @font-face {
     font-family:"Devil Breeze Bold";
     src: url("Fonts/Devil Breeze Bold.woff") format("woff");
@@ -9,7 +11,7 @@
 *{
     box-sizing: border-box;
     font-family: "Cormorant";
-    color: #777;
+    color: #bd2424;
 }
 
 html, body{
@@ -48,7 +50,7 @@ html, body{
 }
 
 .main-header{
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(196, 13, 13, 0.6);
     background-image: url(images/dragonskin.jpg);
     background-blend-mode: multiply;
     background-size: cover;
@@ -60,4 +62,61 @@ html, body{
     margin: 0;
     font-size: 4em;
     font-family: "Devil Breeze Bold"; 
+    color: white;
+}
+
+.band-name-larger{
+    font-size: 8em;
+}
+
+.content-section{
+    margin: 1em;
+    font-family: "Cormorant";
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header{
+    font-family: "Bitter";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+}
+
+.about-band-img{
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer{
+    background-color: rgb(156, 8, 8);
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: 0 .5em;
+}
+
+.footer-nav img{
+    width:30px;
+    height: 30px;
 }
