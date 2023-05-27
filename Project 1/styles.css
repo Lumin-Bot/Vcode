@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300');
+@font-face {
+    font-family:"Devil Breeze Bold";
+    src: url("Fonts/Devil Breeze Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+};
+
 *{
     box-sizing: border-box;
     font-family: "Cormorant";
@@ -14,10 +21,43 @@ html, body{
     margin: 0;
 }
 
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+
+.nav a:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
 .main-header{
     background-color: rgba(0, 0, 0, 0.60);
     background-image: url(images/dragonskin.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Devil Breeze Bold"; 
 }
