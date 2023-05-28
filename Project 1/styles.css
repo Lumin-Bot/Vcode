@@ -219,3 +219,22 @@ html, body{
 .shop-item-img{
     height: 250px;
 }
+
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex-grow: 1;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
