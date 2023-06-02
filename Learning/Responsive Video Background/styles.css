@@ -1,0 +1,31 @@
+html, body{
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100wh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container video{
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    color: white;
+    font-size: 1.5em;
+}
