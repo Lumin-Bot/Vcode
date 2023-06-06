@@ -1,0 +1,50 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+button{
+    margin: 1rem;
+}
+
+.btn{
+    --background-color: #e3e3e3 ; 
+    --border-size: 2px;
+    position: relative;
+    background-color: var(--background-color);
+    color: #222;
+    padding: .5em 1em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 100px;
+    width: 100px;
+}
+
+.btn.btn-border-pop::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: var(--border-size) solid var(--background-color);
+    transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.btn.btn-border-pop:hover::before, 
+.btn.btn-border-pop:focus::before{
+    top: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+}
+
