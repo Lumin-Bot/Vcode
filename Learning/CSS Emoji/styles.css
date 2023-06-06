@@ -43,3 +43,36 @@ body{
     background-color: black;
     border-radius: 50%;
 }
+
+.eye-left{
+    left: calc(var(--emoji-size) * -.2);
+}
+
+.eye-right{
+    right: calc(var(--emoji-size) * -.2);
+}
+
+.smile{
+    --mouth: calc(var(--emoji-size) * .3); 
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    border-radius: 5% 5% var(--mouth) var(--mouth);
+    height: var(--mouth);
+    width: calc(var(--mouth) * 1.5);
+    transform: translateX(-50%);
+}
+
+.teeth{
+    --teeth: calc(var(--mouth) * .3);
+    position: absolute;
+    background-color: #f4f4f4;
+    top: 5%;
+    left: 50%;
+    height: var(--teeth) ;
+    width: calc(var(--mouth) * 1.5);
+    transform: translateX(-50%);
+    border-radius: 5% 5% var(--teeth) var(--teeth);
+
+}
