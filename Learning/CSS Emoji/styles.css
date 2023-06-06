@@ -52,6 +52,7 @@ body{
     right: calc(var(--emoji-size) * -.2);
 }
 
+
 .smile{
     --mouth: calc(var(--emoji-size) * .3); 
     position: absolute;
@@ -74,5 +75,15 @@ body{
     width: calc(var(--mouth) * 1.5);
     transform: translateX(-50%);
     border-radius: 5% 5% var(--teeth) var(--teeth);
+}
 
+.oval-mouth{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: calc(var(--emoji-size) * .3);;
+    width: calc(var(--emoji-size) * .25);;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateX(-50%);
 }
