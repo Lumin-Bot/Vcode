@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Drag and Drop</title>
+    <title>Drag and Drop Chess Style</title>
 </head>
 <body>
-    <div class="container">
-        <p class="draggable" draggable="true">1</p>
-        <p class="draggable" draggable="true">2</p>
+    <div id="gameboard">
+        <div class="square aqua">
+            <img alt="King Piece" id="king" class="piece" draggable="true" src="images/kingpiece.jpg">
+        </div>
+        <div class="square red"></div>
+        <div class="square aqua"></div>
     </div>
-    <div class="container">
-        <p class="draggable" draggable="true">3</p>
-        <p class="draggable" draggable="true">4</p>
-    </div>
-    
+
+    <p id="info"></p>
+    <script src="script.js"></script>
 </body>
 </html>

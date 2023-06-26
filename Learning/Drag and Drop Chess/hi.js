@@ -12,15 +12,15 @@ allSquares.forEach(square => {
 
 })
 
-function dragStart(e){
-    beingDragged = e.target
+function dragStart(event){
+    beingDragged = event.target
 }
 
-function dragDrop(e){
-    e.preventDefault()
-    console.log(e.target)
+function dragDrop(event){
+    console.log(event.target)
+    event.target.append(beingDragged)
 }
 
-function dragOver(e){
-    e.preventDefault()
+function dragOver(event){
+    event.preventDefault()
 }
