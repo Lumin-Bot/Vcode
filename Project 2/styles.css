@@ -6,13 +6,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: black;
 }
 
 .planets-container{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: black;
     transform: scaleX(5);
 }
 
@@ -23,22 +23,60 @@ body{
     transform: scaleX(0.2);
 }
 
+.sun{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #FCCB04;
+    transform: scaleX(.2);
+    box-shadow: 0 0 60px #F79C0F, 0 0 98px #FADC04;
+}
+
 #mercury{
     background-color: #7C7C7C;
+    scale: .6;
 }
 
 #venus{
     background-color: #DCA43C;
+    scale: .8;
 }
 
 #earth{
     background-color: #0C9CBC;
 }
 
+#mars{
+    background-color: #EB693B;
+    scale: .7;
+}
+
 .route{
     width: 100%;
     height: 100%;
     animation: rotate 12s infinite linear;
+    position: absolute;
+}
+
+.container{
+    width: 60px;
+    height: 60px;
+    animation: correct 12s infinite linear;
+    position: absolute;
+}
+
+#mercury-container{
+    left: 10px;
+    top: 30px;
+}
+
+#venus-container{
+    left: 85px;
+}
+
+#earth-container{
+    left: 42.5px;
+    top: 100px;
 }
 
 @keyframes rotate{
@@ -47,5 +85,14 @@ body{
     }
     100%{
         transform: rotateZ(360deg);
+    }
+}
+
+@keyframes correct{
+    0%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
     }
 }
